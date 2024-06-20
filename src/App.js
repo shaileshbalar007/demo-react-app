@@ -10,7 +10,9 @@ function App() {
 
   const fetchAllStudents= async ()=>{
     try{
-      const res=await axios.get("https://demo-react-app-8e694232037e.herokuapp.com/getstudents");
+      const res=await axios.get("https://mysql-node-api-anm7.onrender.com/getstudents");
+   
+      // const res=await axios.get("https://demo-react-app-8e694232037e.herokuapp.com/getstudents");
       setData(res.data);
     }catch(err){
       console.log(err);
